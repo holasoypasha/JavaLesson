@@ -4,7 +4,6 @@ public class Human extends Creature {
     private int age;
     private int height;
     protected String name;
-
     //дефолтный конструктор
     public Human(){
         System.out.println("Вызываю конструктор класса Human");
@@ -38,6 +37,9 @@ public class Human extends Creature {
 
     public void sayAboutMe(){
         System.out.println("Привет! Меня зовут " + name + ", мне " + getAge()  + "лет. Мой рост - " + getHeight());
+    }
+    public void sayAboutMe(String helloMessage){
+        System.out.println("");
     }
 
     //переопеределяем toString
