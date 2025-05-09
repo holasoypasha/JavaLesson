@@ -25,6 +25,7 @@ class HelloWorld {
         stas.sayAboutMe();
 
 
+
     }
 
 }
