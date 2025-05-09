@@ -10,4 +10,9 @@ public class Dog implements Animal {
     public void eat() {
         System.out.println("Собака ест корм");
     }
+
+    @Override
+    public boolean getSwim() {
+        return true;
+    }
 }

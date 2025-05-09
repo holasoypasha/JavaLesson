@@ -6,16 +6,16 @@ import ru.pavlova.lesson.entity.animal.Dog;
 
 public class AnimalMain {
     public static void main(String[] args) {
-        Cat cat = new Cat(true);
+        Cat cat = new Cat();
         Animal dog = new Dog();
 
-        handleAnimal(cat, cat.isCanSwim());
-        handleAnimal(dog, false);
+        handleAnimal(cat);
+        handleAnimal(dog);
     }
 
-    public static void handleAnimal(Animal animal, boolean canSwim){
+    public static void handleAnimal(Animal animal){
         animal.eat();
         animal.say();
-        animal.swim(canSwim);
+        animal.swim();
     }
 }

@@ -38,9 +38,6 @@ public class Human extends Creature {
     public void sayAboutMe(){
         System.out.println("Привет! Меня зовут " + name + ", мне " + getAge()  + "лет. Мой рост - " + getHeight());
     }
-    public void sayAboutMe(String helloMessage){
-        System.out.println("");
-    }
 
     //переопеределяем toString
     @Override
