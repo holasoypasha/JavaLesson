@@ -5,11 +5,11 @@ package ru.pavlova.lesson.entity.vehicle;
  */
 public abstract class Vehicle {
     /**
-     * Поле мощность
+     * Мощность
      */
     protected int power;
     /**
-     * Поле скорость
+     * Скорость
      */
     protected int speed;
 
