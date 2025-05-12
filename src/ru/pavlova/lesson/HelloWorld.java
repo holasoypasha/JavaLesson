@@ -1,5 +1,6 @@
 package ru.pavlova.lesson;
 
+import ru.pavlova.lesson.entity.Human;
 import ru.pavlova.lesson.entity.Men;
 import ru.pavlova.lesson.entity.Women;
 
@@ -8,7 +9,7 @@ class HelloWorld {
         //СОздаем объект класса Women
         Women masha = new Women();
         //СОздаем объект класса Men с изначальными значениями
-        Men stas = new Men("Стас", 27, 180);
+        Human stas = new Men("Стас", 27, 180);
 
         //Вызываем сеттер для установки возраста
         masha.setAge(19);
@@ -24,7 +25,8 @@ class HelloWorld {
         //Вызываем метод родительского класса у объекта stas
         stas.sayAboutMe();
 
-
+        Human.sayAboutHuman(stas);
+        Human.sayAboutHuman(new Men("Вова", 20, 160));
     }
 
 }

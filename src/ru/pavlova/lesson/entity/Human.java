@@ -40,6 +40,10 @@ public class Human extends Creature {
         System.out.println("Привет! Меня зовут " + name + ", мне " + getAge()  + "лет. Мой рост - " + getHeight());
     }
 
+    public static void sayAboutHuman(Human human){
+        System.out.println("Привет! Меня зовут " + human.name + ", мне " + human.getAge()  + "лет. Мой рост - " + human.getHeight());
+    }
+
     //переопеределяем toString
     @Override
     public String toString() {
