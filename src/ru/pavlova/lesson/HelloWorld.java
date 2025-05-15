@@ -1,9 +1,15 @@
 package ru.pavlova.lesson;
 
+import ru.pavlova.lesson.entity.Human;
 import ru.pavlova.lesson.entity.Men;
 import ru.pavlova.lesson.entity.Women;
 
 class HelloWorld {
+    /**
+     * Общий возраст
+     */
+    static int generalAge;
+
     public static void main(String[] args) {
         //СОздаем объект класса Women
         Women masha = new Women();
@@ -24,7 +30,16 @@ class HelloWorld {
         //Вызываем метод родительского класса у объекта stas
         stas.sayAboutMe();
 
-
+        returnGeneralAge(stas, masha);
     }
 
+    /**
+     * Возвращает общий возраст двух людей
+     * @param human1 первый человек
+     * @param human2 второй человек
+     */
+    static void returnGeneralAge(Human human1, Human human2){
+        generalAge = human1.getAge() + human2.getAge();
+        System.out.println("У Маши со Стасом на двоих возраст равен " + generalAge);
+    }
 }
