@@ -4,7 +4,6 @@ public class Human extends Creature {
     private int age;
     private int height;
     protected String name;
-
     //дефолтный конструктор
     public Human(){
         System.out.println("Вызываю конструктор класса Human");
