@@ -1,4 +1,4 @@
-/*package ru.pavlova.lesson.calculator;
+package ru.pavlova.lesson.calculator;
 
 public class SimpleCalculator implements Calculator {
     @Override
@@ -46,4 +46,3 @@ public class SimpleCalculator implements Calculator {
         return result;
     }
 }
-*/
